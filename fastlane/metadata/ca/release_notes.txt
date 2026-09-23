@@ -1,0 +1,9 @@
+La versió 1.0 és el primer llançament.
+
+Un anell és una ronda de respiració. Set anells segellen el dia.
+Mantén el cercle per definir un ritme i després llisca un interval d'un a deu minuts.
+El cicle guiat és Inspira, Mantén i Expira.
+Els anells només creixen. Un interval més curt es rebutja.
+Pràctiques llista els dies segellats i parcials.
+Estadístiques mostra Dies segellats, Anells arxivats, Interval més llarg i Dies consecutius.
+Ajustos conté Contacta amb Auxesis, Com ascendeixen els anells, Torna a veure la introducció, Restableix totes les dades i Hàptics.

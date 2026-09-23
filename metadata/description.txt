@@ -1,0 +1,13 @@
+Auxesis is a daily breath canvas. A ring is one breath round. Seven rings seal the day.
+
+• Hold the circle, then swipe a span so today's rings can grow.
+• Start round files the next ring. Long press sets your own pace.
+• Swipe a span between one and ten minutes. Release to begin Inhale, Hold, and Exhale.
+• End round stops a cycle that is already underway.
+• Rings only grow. Each swipe must last as long as the ring outside it.
+• Seven rings seal the day. After the seventh, the canvas stays read only.
+• Practices lists sealed and partial days, each ring span, and a Day total.
+• Stats shows Sealed days, Filed rings, Longest span, Consecutive days, and Rings this month.
+• Settings includes Contact Auxesis, How rings ascend, Replay onboarding, Reset all data, and Haptics.
+
+Rings stay on this device.

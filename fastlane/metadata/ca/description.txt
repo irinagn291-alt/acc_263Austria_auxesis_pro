@@ -1,0 +1,13 @@
+Auxesis és un llenç diari de respiració. Un anell és una ronda de respiració. Set anells segellen el dia.
+
+• Mantén el cercle i després llisca un interval perquè els anells d'avui puguin créixer.
+• Inicia ronda arxiva l'anell següent. Una pulsació llarga defineix el teu ritme.
+• Llisca un interval d'entre un i deu minuts. Deixa anar per començar Inspira, Mantén i Expira.
+• Acaba ronda atura un cicle que ja està en marxa.
+• Els anells només creixen. Cada lliscament ha de durar tant com l'anell de fora.
+• Set anells segellen el dia. Després del setè, el llenç queda només de lectura.
+• Pràctiques llista els dies segellats i parcials, l'interval de cada anell i un total del dia.
+• Estadístiques mostra Dies segellats, Anells arxivats, Interval més llarg, Dies consecutius i Anells d'aquest mes.
+• Ajustos inclou Contacta amb Auxesis, Com ascendeixen els anells, Torna a veure la introducció, Restableix totes les dades i Hàptics.
+
+Els anells es queden en aquest dispositiu.

@@ -1,0 +1,17 @@
+The only usage-description string in the build settings is for the camera and reads: This app does not use the camera. That prompt never appears, because the app does not request camera access and does not use the camera. On a cold launch the system may show a notification permission prompt. There is no microphone, photos, or location prompt.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+Auxesis is a daily breath canvas. It is for someone who wants each breath round to last at least as long as the last. A ring is one breath round. Seven rings seal the day.
+
+No credentials or demo account are needed. Cold launch shows Breathe longer each round, with the line Hold the circle, then swipe a span so today's rings can grow. Tap Continue. Home is titled Auxesis and shows A ring is one breath round. Seven rings seal the day. Rings today and Outer floor sit above the circle. The caption reads Start round files the next ring. Long press sets your own pace. Tap Start round, or long press the circle until a pace appears, then swipe up to set the span. Release to begin. The captions then read Inhale, Hold, and Exhale. End round stops a cycle that is already underway. Rings today and Outer floor open Ascending rings, titled Rings only grow, which explains that each swipe must last as long as the ring outside it. Tap Practices to see sealed and partial days. Tap a day to read each Ring and the Day total, then Days to go back. Tap Stats to see Sealed days, Filed rings, Longest span, Consecutive days, This month, and Rings this month. Tap Settings for Contact Auxesis, How rings ascend, Replay onboarding, Reset all data, and Haptics labeled Off, Soft, Even, and Firm. Reset all data asks Reset all data? with Cancel and Reset. How rings ascend opens the same Ascending rings page.
+
+Rings stay on this device. Contact Auxesis in Settings opens the support page.
+
+Behavior does not change by region. Dates and numbers follow the device locale.
+
+No licence or regulated-industry paperwork applies. This is a personal breath log, not a medical device.
+
+The app is a personal log only and gives no recommendations.
+
+The app does not scan barcodes or QR codes.

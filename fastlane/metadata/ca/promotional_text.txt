@@ -1,0 +1,1 @@
+Mantén el cercle, llisca un interval i arxiva cada ronda de respiració com un anell. Els anells només creixen. Set anells segellen el dia.

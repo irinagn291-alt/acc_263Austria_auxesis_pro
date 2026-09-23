@@ -1,0 +1,227 @@
+import AuxCanvasCore
+import AuxCanvasStore
+import AuxRingKit
+import UIKit
+
+/// Role: one column per day, seven ring slots each. Days are Buttons.
+@MainActor
+final class MonthRingHistoryView: UIView {
+    var onSelect: ((PracticeDay) -> Void)?
+
+    private let column = UIStackView()
+    private let weekRow = UIStackView()
+    private let grid = UIStackView()
+    private var cells: [HistoryDayButton] = []
+    private var selected: DayKey?
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
+
+        weekRow.axis = .horizontal
+        weekRow.distribution = .fillEqually
+        weekRow.spacing = AuxSpace.unit
+        weekRow.translatesAutoresizingMaskIntoConstraints = false
+        weekRow.setContentHuggingPriority(.required, for: .vertical)
+
+        grid.axis = .vertical
+        grid.spacing = AuxSpace.unit
+        grid.distribution = .fillEqually
+        grid.translatesAutoresizingMaskIntoConstraints = false
+        grid.setContentHuggingPriority(.defaultLow, for: .vertical)
+        grid.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+
+        column.translatesAutoresizingMaskIntoConstraints = false
+        column.axis = .vertical
+        column.alignment = .fill
+        column.spacing = AuxSpace.unit
+        column.addArrangedSubview(weekRow)
+        column.addArrangedSubview(grid)
+        addSubview(column)
+        NSLayoutConstraint.activate([
+            column.topAnchor.constraint(equalTo: topAnchor),
+            column.leadingAnchor.constraint(equalTo: leadingAnchor),
+            column.trailingAnchor.constraint(equalTo: trailingAnchor),
+            column.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) is unused. This history is built in code.")
+    }
+
+    func apply(days: [PracticeDay], calendar: Calendar = .current, now: Date = Date()) {
+        let map = Dictionary(uniqueKeysWithValues: days.map { ($0.dayKey, $0) })
+        let monthStart = calendar.date(from: calendar.dateComponents([.year, .month], from: now)) ?? now
+
+        weekRow.arrangedSubviews.forEach { view in
+            weekRow.removeArrangedSubview(view)
+            view.removeFromSuperview()
+        }
+        let symbols = calendar.veryShortWeekdaySymbols
+        let first = calendar.firstWeekday - 1
+        for offset in 0 ..< 7 {
+            let label = UILabel()
+            label.textAlignment = .center
+            label.font = AuxType.caption()
+            label.textColor = AuxColor.muted
+            label.text = symbols[(first + offset) % symbols.count]
+            label.adjustsFontForContentSizeCategory = true
+            weekRow.addArrangedSubview(label)
+        }
+
+        grid.arrangedSubviews.forEach { row in
+            grid.removeArrangedSubview(row)
+            row.removeFromSuperview()
+        }
+        cells.removeAll()
+
+        let weekday = calendar.component(.weekday, from: monthStart)
+        let leading = (weekday - calendar.firstWeekday + 7) % 7
+        let count = calendar.range(of: .day, in: .month, for: monthStart)?.count ?? 30
+        var items: [Date?] = Array(repeating: nil, count: leading)
+        for day in 1 ... count {
+            items.append(calendar.date(byAdding: .day, value: day - 1, to: monthStart))
+        }
+        while items.count % 7 != 0 {
+            items.append(nil)
+        }
+
+        for chunk in stride(from: 0, to: items.count, by: 7) {
+            let row = UIStackView()
+            row.axis = .horizontal
+            row.distribution = .fillEqually
+            row.spacing = AuxSpace.unit
+            for date in items[chunk ..< chunk + 7] {
+                let cell = HistoryDayButton()
+                cell.addTarget(self, action: #selector(pick(_:)), for: .touchUpInside)
+                if let date {
+                    let key = DayKey.of(date, calendar: calendar)
+                    let practice = map[key] ?? PracticeDay(
+                        dayKey: key,
+                        ringCount: 0,
+                        isSealed: false,
+                        durations: []
+                    )
+                    cell.apply(practice: practice, calendar: calendar)
+                    cell.isEnabled = true
+                } else {
+                    cell.applyEmpty()
+                    cell.isEnabled = false
+                }
+                row.addArrangedSubview(cell)
+                cells.append(cell)
+            }
+            grid.addArrangedSubview(row)
+        }
+        if selected == nil {
+            selected = DayKey.of(now, calendar: calendar)
+        }
+        refreshSelection()
+        notifySelection()
+    }
+
+    @objc private func pick(_ cell: HistoryDayButton) {
+        guard let key = cell.dayKey else { return }
+        selected = key
+        refreshSelection()
+        notifySelection()
+    }
+
+    private func refreshSelection() {
+        for cell in cells {
+            cell.setChosen(cell.dayKey == selected)
+        }
+    }
+
+    private func notifySelection() {
+        guard let cell = cells.first(where: { $0.dayKey == selected }), let day = cell.practice else {
+            return
+        }
+        onSelect?(day)
+    }
+}
+
+@MainActor
+private final class HistoryDayButton: UIButton {
+    private(set) var dayKey: DayKey?
+    private(set) var practice: PracticeDay?
+    private let number = UILabel()
+    private let slots = RingSlotColumn(axis: .horizontal)
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
+        var config = UIButton.Configuration.plain()
+        config.contentInsets = .zero
+        config.title = nil
+        config.background.backgroundColor = AuxColor.surface
+        config.background.cornerRadius = AuxRadius.chip
+        config.background.strokeWidth = AuxElevation.borderWidth
+        configuration = config
+        AuxElevation.apply(to: self, radius: AuxRadius.chip)
+        clipsToBounds = true
+
+        number.translatesAutoresizingMaskIntoConstraints = false
+        number.font = AuxType.dayMark()
+        number.textColor = AuxColor.ink
+        number.textAlignment = .center
+        number.adjustsFontForContentSizeCategory = false
+        number.adjustsFontSizeToFitWidth = false
+        number.lineBreakMode = .byClipping
+        number.numberOfLines = 1
+        number.setContentHuggingPriority(.required, for: .vertical)
+        number.setContentCompressionResistancePriority(.required, for: .vertical)
+        number.setContentCompressionResistancePriority(.required, for: .horizontal)
+        number.isUserInteractionEnabled = false
+
+        addSubview(number)
+        addSubview(slots)
+        NSLayoutConstraint.activate([
+            heightAnchor.constraint(greaterThanOrEqualToConstant: AuxSpace.hit),
+            number.topAnchor.constraint(equalTo: topAnchor, constant: AuxSpace.unit / 2),
+            number.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 2),
+            number.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2),
+            number.heightAnchor.constraint(equalToConstant: 20),
+            slots.topAnchor.constraint(equalTo: number.bottomAnchor, constant: 2),
+            slots.leadingAnchor.constraint(equalTo: leadingAnchor, constant: AuxSpace.unit / 2),
+            slots.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -AuxSpace.unit / 2),
+            slots.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -2),
+        ])
+        configurationUpdateHandler = { [weak self] button in
+            self?.alpha = button.isHighlighted ? 0.72 : 1
+        }
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) is unused. This day column is built in code.")
+    }
+
+    func applyEmpty() {
+        dayKey = nil
+        practice = nil
+        number.text = ""
+        accessibilityLabel = "Empty"
+        backgroundColor = AuxColor.background
+        slots.apply(filled: 0, vacant: true)
+    }
+
+    func apply(practice: PracticeDay, calendar: Calendar) {
+        self.practice = practice
+        dayKey = practice.dayKey
+        number.text = AuxFormat.dayOfMonth(practice.dayKey, calendar: calendar)
+        slots.apply(filled: practice.ringCount)
+        let status = practice.isSealed
+            ? "Sealed"
+            : AuxFormat.ringsOutOfSeven(practice.ringCount)
+        accessibilityLabel = "\(AuxFormat.day(practice.dayKey, calendar: calendar)), \(status)"
+        backgroundColor = AuxColor.surface
+    }
+
+    func setChosen(_ chosen: Bool) {
+        layer.borderColor = (chosen ? AuxColor.accent : AuxColor.muted.withAlphaComponent(0.35)).cgColor
+        layer.borderWidth = AuxElevation.borderWidth
+    }
+}

@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BF12262C28EDD38968A7A1 /* AuxRingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 578E7E679C4DA51E372082FB /* AuxRingKit */; };
+		0B85726B50F8C5CDE0434808 /* PaceHapticDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63129861CECE2A0DA246E977 /* PaceHapticDriver.swift */; };
+		0D64E372787677998019050E /* AuxCanvasStore in Frameworks */ = {isa = PBXBuildFile; productRef = CA3BB7A09D538F4874BB58CE /* AuxCanvasStore */; };
+		196974B38AF960A2CD08920D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469EC877A24D9774EB68EA8B /* Assets.xcassets */; };
+		1BB1484DDDF827A6A4C25963 /* MonthRingGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2A1888911327A2DCA541D /* MonthRingGridView.swift */; };
+		1DAEDED8EEF9F6A3F300E124 /* AuxFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05974E108D850FEFB8AABF /* AuxFormat.swift */; };
+		1E25087C25BB391C79C13274 /* StatsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78B7C86FB728D9343200A4 /* StatsSheetViewController.swift */; };
+		20A825B645C08F6E6693CFE0 /* PhaseFoldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA4341C766B9276178D6588 /* PhaseFoldTests.swift */; };
+		23504F22BEEE3F3343ECA75B /* PracticesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE8CDC35F2FAAA2EC4F15E /* PracticesView.swift */; };
+		2FF95C957FC9603CECC2CA9D /* MonthRingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A625AAC3062BF3278B70693A /* MonthRingHistoryView.swift */; };
+		30BA7C66230BBE227F697F25 /* RingTrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED036E4E2BDE7B84439A4D /* RingTrendView.swift */; };
+		35B1147B8A983F0B6730597F /* AuxesisClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75E9E636D763B13A6A05D2 /* AuxesisClient.swift */; };
+		393CA9D9DC558D54941C606A /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 3026EB7E95A7701AE47BB996 /* OneSignalExtension */; };
+		51AAAF31D399C27927EBAC7E /* RefusalBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEBCCA79731D515203E122C /* RefusalBanner.swift */; };
+		599FEEBFB0194B7CFB42CD07 /* GuidedCycleTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF8F716856E2B292D7A093 /* GuidedCycleTicker.swift */; };
+		5AEEDB10500E38024D849F9F /* AuxCanvasCore in Frameworks */ = {isa = PBXBuildFile; productRef = ABE2FE911046FC167B4EE4C2 /* AuxCanvasCore */; };
+		5BBDFCDD6160349A096E1D19 /* CenterCircleControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1957B5989939BB0C97A23ECC /* CenterCircleControl.swift */; };
+		5C0D237CDF4E612CEC43532C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4928319D51CC485F877B479 /* APIConfig.swift */; };
+		6051A37B58B03102C308F860 /* AuxesisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DD82FA664F5BA1B22AA26 /* AuxesisApp.swift */; };
+		6DE5A1A94B63DEABC71C8E1D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C38EE7ACA7E6E2D3D5F282A /* StatsView.swift */; };
+		700A878015B3A44C2F0B22FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE121F23CF93EA24442358 /* AppDelegate.swift */; };
+		73A676D0118799725A30D597 /* SheetHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A2C2C399BF9F3461EF5D /* SheetHeaderView.swift */; };
+		78AFBED3B12834DE25C0F2F7 /* ReviewScreenKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DF47358FD956363AFB696 /* ReviewScreenKeysTests.swift */; };
+		7B86EB6ACAE608B052EB88D5 /* AuxCanvasStore in Frameworks */ = {isa = PBXBuildFile; productRef = FAD181C2C77E0BB5C9A771AF /* AuxCanvasStore */; };
+		828D080D9F622FAC7AB5DE19 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB446850B643BF4EDD33030 /* NotificationService.swift */; };
+		85092788E10D6BA7213C8003 /* FullMarkSealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA409991CC4F3742C1C7392 /* FullMarkSealTests.swift */; };
+		86E98C8F7DDBF59726450E79 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3877DA8AD684C9A62488696 /* LaunchViewController.swift */; };
+		8A7C415AD23BF3E1DA899E86 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 120A62A62CFBCDAA8A9EE8B5 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CA04285BA1993AC3515E89A /* DayRingTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29E3A3DEBD84B340289137B /* DayRingTrackView.swift */; };
+		8E33B205F0558187087EDB19 /* RingCountMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8328A0871E65C61DD32541 /* RingCountMark.swift */; };
+		96D79265BFB3FF9B9024554C /* PracticesDayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE36337289F94B34073E30 /* PracticesDayDetailViewController.swift */; };
+		997C7EA531D6FC6D546107FE /* DemoSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D59357B19FEEE240773F3 /* DemoSeed.swift */; };
+		9AF1F326BA03EB9EBF8816C0 /* RingStrataLayerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C36E254D50073DE2D164811 /* RingStrataLayerRenderer.swift */; };
+		9FC08E28AB59BBF0B17E823C /* AuxesisClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12ADA4574E121371F507A3 /* AuxesisClientTests.swift */; };
+		A2626DCDD1BA155933E09F45 /* RefusalCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492B3784C0FF255D8DCBB31 /* RefusalCopy.swift */; };
+		B7359815DEEA197C7EEDEE68 /* AuxCanvasCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1132AC139835C724877E5A44 /* AuxCanvasCore */; };
+		BB145C43756138C4760B8FCE /* ReviewScreenKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D745B60E975B4073E4C1DF6 /* ReviewScreenKeys.swift */; };
+		BFA9ADE2EC3CB34C40425CBE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 34BB5984ADCB0C5F9C82B81F /* Alamofire */; };
+		C1135A0C1D3242400187BD1C /* FactTileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5215BCD5FFDA065C4E24D /* FactTileButton.swift */; };
+		C4BDF490141A8E5DB67588E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD405B6A992756779970AE /* ContentView.swift */; };
+		CB34BDA3DFE96EA5B564DD5E /* AuxPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB13F88851DA2C6A9DB48D /* AuxPreferences.swift */; };
+		CF3B038B63BCFC85C6C3ACC2 /* CanvasChromeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E6D58EFD04356B7CE0D09 /* CanvasChromeBar.swift */; };
+		D883FF5FBC30FB686C052127 /* AuxesisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94797EBB85CB78339BB9BFC8 /* AuxesisTests.swift */; };
+		DE319999094C6D18D6EC7F44 /* FamilyInvariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50AF6E89269593975CC1839 /* FamilyInvariantTests.swift */; };
+		E040113F0CF67E328B5D8B6A /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC6B91D179B30942FD3E0C /* CanvasViewController.swift */; };
+		E75A6A5AACB1EC9E68DA5BDA /* SealPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14E61B5965EA715FD68385 /* SealPersistenceTests.swift */; };
+		E7B1420650ED2049F75F5AF6 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = B2320A82EB1A55E6BE803C67 /* OneSignalInAppMessages */; };
+		E8E347711FE5CE8719772F4A /* AuxAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A8551EBEF976F2EA40213 /* AuxAsset.swift */; };
+		E9EDE001615A6D4BBB08D237 /* AscendingRefusalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8274F100D8D3D4D7EB57A /* AscendingRefusalTests.swift */; };
+		EA140159A7B2E70F3CB7CAE1 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 84765A9061A34D0385E5B3C7 /* OneSignalFramework */; };
+		F083A202989D0BE0DE0C5D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557EB5BDF2CC5FE37F5CEDE /* SceneDelegate.swift */; };
+		F79F3EC921C3D5547F079DC8 /* PracticesSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CCC4BC7E833892A864BF4 /* PracticesSheetViewController.swift */; };
+		F91996711CB88777EB64572E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93AA9DCA4469D63BF52691 /* OnboardingViewController.swift */; };
+		FB4DB5EC6A3F63B0CB835851 /* StrataSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1718BE2748BA6A4AB4A7A47 /* StrataSheetViewController.swift */; };
+		FCE92B543ED3683E47CE85BA /* SettingsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F6C688A099971712E2CE8 /* SettingsSheetViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A381935A8B934DB3B623A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0587A4C132442E09CA51EA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E6EFE5782CF057D357CB65;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+		A2A55987AE30B0F75140D4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0587A4C132442E09CA51EA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98276C4CCD0930D253EEB744;
+			remoteInfo = Auxesis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		016FBB3EAF4787B26B45790B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A7C415AD23BF3E1DA899E86 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B75E9E636D763B13A6A05D2 /* AuxesisClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxesisClient.swift; sourceTree = "<group>"; };
+		0C38EE7ACA7E6E2D3D5F282A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		10EE36337289F94B34073E30 /* PracticesDayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesDayDetailViewController.swift; sourceTree = "<group>"; };
+		120A62A62CFBCDAA8A9EE8B5 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1957B5989939BB0C97A23ECC /* CenterCircleControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCircleControl.swift; sourceTree = "<group>"; };
+		1A7A8551EBEF976F2EA40213 /* AuxAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxAsset.swift; sourceTree = "<group>"; };
+		1A93AA9DCA4469D63BF52691 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1CC32D1CD4A7B26D6C7BD811 /* AuxCanvasCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AuxCanvasCore; path = Packages/AuxCanvasCore; sourceTree = SOURCE_ROOT; };
+		1E2DF47358FD956363AFB696 /* ReviewScreenKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreenKeysTests.swift; sourceTree = "<group>"; };
+		2492B3784C0FF255D8DCBB31 /* RefusalCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefusalCopy.swift; sourceTree = "<group>"; };
+		324DD82FA664F5BA1B22AA26 /* AuxesisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxesisApp.swift; sourceTree = "<group>"; };
+		3D745B60E975B4073E4C1DF6 /* ReviewScreenKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreenKeys.swift; sourceTree = "<group>"; };
+		3D8328A0871E65C61DD32541 /* RingCountMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingCountMark.swift; sourceTree = "<group>"; };
+		469EC877A24D9774EB68EA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AA4341C766B9276178D6588 /* PhaseFoldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseFoldTests.swift; sourceTree = "<group>"; };
+		4B58BD00B56ACE6671FFDD2D /* AuxCanvasStore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AuxCanvasStore; path = Packages/AuxCanvasStore; sourceTree = SOURCE_ROOT; };
+		4DAB13F88851DA2C6A9DB48D /* AuxPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxPreferences.swift; sourceTree = "<group>"; };
+		4E1F6C688A099971712E2CE8 /* SettingsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheetViewController.swift; sourceTree = "<group>"; };
+		4EF2A1888911327A2DCA541D /* MonthRingGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthRingGridView.swift; sourceTree = "<group>"; };
+		5A05974E108D850FEFB8AABF /* AuxFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxFormat.swift; sourceTree = "<group>"; };
+		63129861CECE2A0DA246E977 /* PaceHapticDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceHapticDriver.swift; sourceTree = "<group>"; };
+		6CEBCCA79731D515203E122C /* RefusalBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefusalBanner.swift; sourceTree = "<group>"; };
+		6EEE8CDC35F2FAAA2EC4F15E /* PracticesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesView.swift; sourceTree = "<group>"; };
+		7C36E254D50073DE2D164811 /* RingStrataLayerRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingStrataLayerRenderer.swift; sourceTree = "<group>"; };
+		7EA409991CC4F3742C1C7392 /* FullMarkSealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMarkSealTests.swift; sourceTree = "<group>"; };
+		81A35A361E6C91C90AEAA7FF /* AuxesisTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AuxesisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88ED036E4E2BDE7B84439A4D /* RingTrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingTrendView.swift; sourceTree = "<group>"; };
+		8B14E61B5965EA715FD68385 /* SealPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealPersistenceTests.swift; sourceTree = "<group>"; };
+		8E78B7C86FB728D9343200A4 /* StatsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSheetViewController.swift; sourceTree = "<group>"; };
+		94797EBB85CB78339BB9BFC8 /* AuxesisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxesisTests.swift; sourceTree = "<group>"; };
+		956E6D58EFD04356B7CE0D09 /* CanvasChromeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasChromeBar.swift; sourceTree = "<group>"; };
+		9B6D87015A231A6B72CA17FF /* AuxRingKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AuxRingKit; path = Packages/AuxRingKit; sourceTree = SOURCE_ROOT; };
+		9CE6BF1028C91B546AABB29E /* Auxesis.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Auxesis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1718BE2748BA6A4AB4A7A47 /* StrataSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrataSheetViewController.swift; sourceTree = "<group>"; };
+		A1FE121F23CF93EA24442358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A625AAC3062BF3278B70693A /* MonthRingHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthRingHistoryView.swift; sourceTree = "<group>"; };
+		AED8274F100D8D3D4D7EB57A /* AscendingRefusalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendingRefusalTests.swift; sourceTree = "<group>"; };
+		B91CCC4BC7E833892A864BF4 /* PracticesSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesSheetViewController.swift; sourceTree = "<group>"; };
+		C504A2C2C399BF9F3461EF5D /* SheetHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHeaderView.swift; sourceTree = "<group>"; };
+		C50AF6E89269593975CC1839 /* FamilyInvariantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyInvariantTests.swift; sourceTree = "<group>"; };
+		CC12ADA4574E121371F507A3 /* AuxesisClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxesisClientTests.swift; sourceTree = "<group>"; };
+		CD8D59357B19FEEE240773F3 /* DemoSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSeed.swift; sourceTree = "<group>"; };
+		D29E3A3DEBD84B340289137B /* DayRingTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRingTrackView.swift; sourceTree = "<group>"; };
+		D4928319D51CC485F877B479 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		E3BD405B6A992756779970AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E557EB5BDF2CC5FE37F5CEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8FF8F716856E2B292D7A093 /* GuidedCycleTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedCycleTicker.swift; sourceTree = "<group>"; };
+		EAB446850B643BF4EDD33030 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F3877DA8AD684C9A62488696 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		F9A5215BCD5FFDA065C4E24D /* FactTileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTileButton.swift; sourceTree = "<group>"; };
+		F9EC6B91D179B30942FD3E0C /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177746DA8DA5D273745B5048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEEDB10500E38024D849F9F /* AuxCanvasCore in Frameworks */,
+				7B86EB6ACAE608B052EB88D5 /* AuxCanvasStore in Frameworks */,
+				04BF12262C28EDD38968A7A1 /* AuxRingKit in Frameworks */,
+				BFA9ADE2EC3CB34C40425CBE /* Alamofire in Frameworks */,
+				EA140159A7B2E70F3CB7CAE1 /* OneSignalFramework in Frameworks */,
+				E7B1420650ED2049F75F5AF6 /* OneSignalInAppMessages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1EAEC079A3448AE06C231A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7359815DEEA197C7EEDEE68 /* AuxCanvasCore in Frameworks */,
+				0D64E372787677998019050E /* AuxCanvasStore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A23812973737F974773DD3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393CA9D9DC558D54941C606A /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25496393CC2BF6C6E1F568A5 /* AuxCanvasCore */ = {
+			isa = PBXGroup;
+			children = (
+				4B97323DE8B3C5A1A1F0CB85 /* Tests */,
+			);
+			path = AuxCanvasCore;
+			sourceTree = "<group>";
+		};
+		4B97323DE8B3C5A1A1F0CB85 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5DA183A040C2FAB6D613E2 /* AuxCanvasCoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		53DB62D3B3250B5362010D12 /* AuxesisTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC12ADA4574E121371F507A3 /* AuxesisClientTests.swift */,
+				94797EBB85CB78339BB9BFC8 /* AuxesisTests.swift */,
+				1E2DF47358FD956363AFB696 /* ReviewScreenKeysTests.swift */,
+			);
+			path = AuxesisTests;
+			sourceTree = "<group>";
+		};
+		75257A4B3554F36ADB2F212A /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EAB446850B643BF4EDD33030 /* NotificationService.swift */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		7574447963A9C69138F714B7 /* AuxCanvasStore */ = {
+			isa = PBXGroup;
+			children = (
+				81D85941DC02C74A9911B75C /* Tests */,
+			);
+			path = AuxCanvasStore;
+			sourceTree = "<group>";
+		};
+		7B03E6C53AC269FE07BA83FF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1CC32D1CD4A7B26D6C7BD811 /* AuxCanvasCore */,
+				4B58BD00B56ACE6671FFDD2D /* AuxCanvasStore */,
+				9B6D87015A231A6B72CA17FF /* AuxRingKit */,
+				25496393CC2BF6C6E1F568A5 /* AuxCanvasCore */,
+				7574447963A9C69138F714B7 /* AuxCanvasStore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		81D85941DC02C74A9911B75C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A6746497E6BDF175C0BC875 /* AuxCanvasStoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8A6228B7B91A08602C863772 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B75E9E636D763B13A6A05D2 /* AuxesisClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8A6746497E6BDF175C0BC875 /* AuxCanvasStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B14E61B5965EA715FD68385 /* SealPersistenceTests.swift */,
+			);
+			path = AuxCanvasStoreTests;
+			sourceTree = "<group>";
+		};
+		954BD5E54BA92F6028324A8C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A7A8551EBEF976F2EA40213 /* AuxAsset.swift */,
+				5A05974E108D850FEFB8AABF /* AuxFormat.swift */,
+				4DAB13F88851DA2C6A9DB48D /* AuxPreferences.swift */,
+				CD8D59357B19FEEE240773F3 /* DemoSeed.swift */,
+				F3877DA8AD684C9A62488696 /* LaunchViewController.swift */,
+				2492B3784C0FF255D8DCBB31 /* RefusalCopy.swift */,
+				3D745B60E975B4073E4C1DF6 /* ReviewScreenKeys.swift */,
+				E557EB5BDF2CC5FE37F5CEDE /* SceneDelegate.swift */,
+				D82F8B7CED9DFFD9A4B7F7DE /* Canvas */,
+				CDE85337AED8A8B7E694FDF5 /* Sheets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9E7FDD1459B16C20262A5475 /* Auxesis */ = {
+			isa = PBXGroup;
+			children = (
+				D4928319D51CC485F877B479 /* APIConfig.swift */,
+				A1FE121F23CF93EA24442358 /* AppDelegate.swift */,
+				469EC877A24D9774EB68EA8B /* Assets.xcassets */,
+				324DD82FA664F5BA1B22AA26 /* AuxesisApp.swift */,
+				E3BD405B6A992756779970AE /* ContentView.swift */,
+				954BD5E54BA92F6028324A8C /* App */,
+				8A6228B7B91A08602C863772 /* Network */,
+			);
+			path = Auxesis;
+			sourceTree = "<group>";
+		};
+		C42C5CF80C175AF0B0ED252D = {
+			isa = PBXGroup;
+			children = (
+				9E7FDD1459B16C20262A5475 /* Auxesis */,
+				53DB62D3B3250B5362010D12 /* AuxesisTests */,
+				75257A4B3554F36ADB2F212A /* OneSignalNotificationServiceExtension */,
+				7B03E6C53AC269FE07BA83FF /* Packages */,
+				E6E347DC1E4BDC8B939F1AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5DA183A040C2FAB6D613E2 /* AuxCanvasCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				AED8274F100D8D3D4D7EB57A /* AscendingRefusalTests.swift */,
+				C50AF6E89269593975CC1839 /* FamilyInvariantTests.swift */,
+				7EA409991CC4F3742C1C7392 /* FullMarkSealTests.swift */,
+				4AA4341C766B9276178D6588 /* PhaseFoldTests.swift */,
+			);
+			path = AuxCanvasCoreTests;
+			sourceTree = "<group>";
+		};
+		CDE85337AED8A8B7E694FDF5 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				4EF2A1888911327A2DCA541D /* MonthRingGridView.swift */,
+				A625AAC3062BF3278B70693A /* MonthRingHistoryView.swift */,
+				1A93AA9DCA4469D63BF52691 /* OnboardingViewController.swift */,
+				10EE36337289F94B34073E30 /* PracticesDayDetailViewController.swift */,
+				B91CCC4BC7E833892A864BF4 /* PracticesSheetViewController.swift */,
+				6EEE8CDC35F2FAAA2EC4F15E /* PracticesView.swift */,
+				3D8328A0871E65C61DD32541 /* RingCountMark.swift */,
+				88ED036E4E2BDE7B84439A4D /* RingTrendView.swift */,
+				4E1F6C688A099971712E2CE8 /* SettingsSheetViewController.swift */,
+				C504A2C2C399BF9F3461EF5D /* SheetHeaderView.swift */,
+				8E78B7C86FB728D9343200A4 /* StatsSheetViewController.swift */,
+				0C38EE7ACA7E6E2D3D5F282A /* StatsView.swift */,
+				A1718BE2748BA6A4AB4A7A47 /* StrataSheetViewController.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		D82F8B7CED9DFFD9A4B7F7DE /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				956E6D58EFD04356B7CE0D09 /* CanvasChromeBar.swift */,
+				F9EC6B91D179B30942FD3E0C /* CanvasViewController.swift */,
+				1957B5989939BB0C97A23ECC /* CenterCircleControl.swift */,
+				D29E3A3DEBD84B340289137B /* DayRingTrackView.swift */,
+				F9A5215BCD5FFDA065C4E24D /* FactTileButton.swift */,
+				E8FF8F716856E2B292D7A093 /* GuidedCycleTicker.swift */,
+				63129861CECE2A0DA246E977 /* PaceHapticDriver.swift */,
+				6CEBCCA79731D515203E122C /* RefusalBanner.swift */,
+				7C36E254D50073DE2D164811 /* RingStrataLayerRenderer.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		E6E347DC1E4BDC8B939F1AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CE6BF1028C91B546AABB29E /* Auxesis.app */,
+				81A35A361E6C91C90AEAA7FF /* AuxesisTests.xctest */,
+				120A62A62CFBCDAA8A9EE8B5 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98276C4CCD0930D253EEB744 /* Auxesis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E264A63ADED064482AE3604B /* Build configuration list for PBXNativeTarget "Auxesis" */;
+			buildPhases = (
+				F5A34E119451FF5B60AF4F5E /* Sources */,
+				D6D9076E09B4F18DC706D571 /* Resources */,
+				177746DA8DA5D273745B5048 /* Frameworks */,
+				016FBB3EAF4787B26B45790B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25F1B4A9EF87955D8F5BF659 /* PBXTargetDependency */,
+			);
+			name = Auxesis;
+			packageProductDependencies = (
+				ABE2FE911046FC167B4EE4C2 /* AuxCanvasCore */,
+				FAD181C2C77E0BB5C9A771AF /* AuxCanvasStore */,
+				578E7E679C4DA51E372082FB /* AuxRingKit */,
+				34BB5984ADCB0C5F9C82B81F /* Alamofire */,
+				84765A9061A34D0385E5B3C7 /* OneSignalFramework */,
+				B2320A82EB1A55E6BE803C67 /* OneSignalInAppMessages */,
+			);
+			productName = Auxesis;
+			productReference = 9CE6BF1028C91B546AABB29E /* Auxesis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1E6EFE5782CF057D357CB65 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F963E40CD30ED9415A6E2C24 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				6164BCF3BEDCD3EDD201E14E /* Sources */,
+				3A23812973737F974773DD3E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				3026EB7E95A7701AE47BB996 /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 120A62A62CFBCDAA8A9EE8B5 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F28FB13EF5633083CA0F8735 /* AuxesisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD83FD32684346362AAFA1A /* Build configuration list for PBXNativeTarget "AuxesisTests" */;
+			buildPhases = (
+				57E5E9B37970DD6F0DAC297A /* Sources */,
+				1F1EAEC079A3448AE06C231A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81A4AC5CA12100E84C0059BE /* PBXTargetDependency */,
+			);
+			name = AuxesisTests;
+			packageProductDependencies = (
+				1132AC139835C724877E5A44 /* AuxCanvasCore */,
+				CA3BB7A09D538F4874BB58CE /* AuxCanvasStore */,
+			);
+			productName = AuxesisTests;
+			productReference = 81A35A361E6C91C90AEAA7FF /* AuxesisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0587A4C132442E09CA51EA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					98276C4CCD0930D253EEB744 = {
+						ProvisioningStyle = Automatic;
+					};
+					F1E6EFE5782CF057D357CB65 = {
+						ProvisioningStyle = Automatic;
+					};
+					F28FB13EF5633083CA0F8735 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 42944E5DA61097F6CD074F47 /* Build configuration list for PBXProject "Auxesis" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C42C5CF80C175AF0B0ED252D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				42695E008F5B40B6CB41C05B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				A6B0F83283325CA0799CB47C /* XCLocalSwiftPackageReference "Packages/AuxCanvasCore" */,
+				C273636582C3BD45C5FC965C /* XCLocalSwiftPackageReference "Packages/AuxCanvasStore" */,
+				89DCC5EC939920A96CE6B77B /* XCLocalSwiftPackageReference "Packages/AuxRingKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E6E347DC1E4BDC8B939F1AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98276C4CCD0930D253EEB744 /* Auxesis */,
+				F28FB13EF5633083CA0F8735 /* AuxesisTests */,
+				F1E6EFE5782CF057D357CB65 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6D9076E09B4F18DC706D571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196974B38AF960A2CD08920D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57E5E9B37970DD6F0DAC297A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EDE001615A6D4BBB08D237 /* AscendingRefusalTests.swift in Sources */,
+				9FC08E28AB59BBF0B17E823C /* AuxesisClientTests.swift in Sources */,
+				D883FF5FBC30FB686C052127 /* AuxesisTests.swift in Sources */,
+				DE319999094C6D18D6EC7F44 /* FamilyInvariantTests.swift in Sources */,
+				85092788E10D6BA7213C8003 /* FullMarkSealTests.swift in Sources */,
+				20A825B645C08F6E6693CFE0 /* PhaseFoldTests.swift in Sources */,
+				78AFBED3B12834DE25C0F2F7 /* ReviewScreenKeysTests.swift in Sources */,
+				E75A6A5AACB1EC9E68DA5BDA /* SealPersistenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6164BCF3BEDCD3EDD201E14E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828D080D9F622FAC7AB5DE19 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A34E119451FF5B60AF4F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0D237CDF4E612CEC43532C /* APIConfig.swift in Sources */,
+				700A878015B3A44C2F0B22FE /* AppDelegate.swift in Sources */,
+				E8E347711FE5CE8719772F4A /* AuxAsset.swift in Sources */,
+				1DAEDED8EEF9F6A3F300E124 /* AuxFormat.swift in Sources */,
+				CB34BDA3DFE96EA5B564DD5E /* AuxPreferences.swift in Sources */,
+				6051A37B58B03102C308F860 /* AuxesisApp.swift in Sources */,
+				35B1147B8A983F0B6730597F /* AuxesisClient.swift in Sources */,
+				CF3B038B63BCFC85C6C3ACC2 /* CanvasChromeBar.swift in Sources */,
+				E040113F0CF67E328B5D8B6A /* CanvasViewController.swift in Sources */,
+				5BBDFCDD6160349A096E1D19 /* CenterCircleControl.swift in Sources */,
+				C4BDF490141A8E5DB67588E9 /* ContentView.swift in Sources */,
+				8CA04285BA1993AC3515E89A /* DayRingTrackView.swift in Sources */,
+				997C7EA531D6FC6D546107FE /* DemoSeed.swift in Sources */,
+				C1135A0C1D3242400187BD1C /* FactTileButton.swift in Sources */,
+				599FEEBFB0194B7CFB42CD07 /* GuidedCycleTicker.swift in Sources */,
+				86E98C8F7DDBF59726450E79 /* LaunchViewController.swift in Sources */,
+				1BB1484DDDF827A6A4C25963 /* MonthRingGridView.swift in Sources */,
+				2FF95C957FC9603CECC2CA9D /* MonthRingHistoryView.swift in Sources */,
+				F91996711CB88777EB64572E /* OnboardingViewController.swift in Sources */,
+				0B85726B50F8C5CDE0434808 /* PaceHapticDriver.swift in Sources */,
+				96D79265BFB3FF9B9024554C /* PracticesDayDetailViewController.swift in Sources */,
+				F79F3EC921C3D5547F079DC8 /* PracticesSheetViewController.swift in Sources */,
+				23504F22BEEE3F3343ECA75B /* PracticesView.swift in Sources */,
+				51AAAF31D399C27927EBAC7E /* RefusalBanner.swift in Sources */,
+				A2626DCDD1BA155933E09F45 /* RefusalCopy.swift in Sources */,
+				BB145C43756138C4760B8FCE /* ReviewScreenKeys.swift in Sources */,
+				8E33B205F0558187087EDB19 /* RingCountMark.swift in Sources */,
+				9AF1F326BA03EB9EBF8816C0 /* RingStrataLayerRenderer.swift in Sources */,
+				30BA7C66230BBE227F697F25 /* RingTrendView.swift in Sources */,
+				F083A202989D0BE0DE0C5D7F /* SceneDelegate.swift in Sources */,
+				FCE92B543ED3683E47CE85BA /* SettingsSheetViewController.swift in Sources */,
+				73A676D0118799725A30D597 /* SheetHeaderView.swift in Sources */,
+				1E25087C25BB391C79C13274 /* StatsSheetViewController.swift in Sources */,
+				6DE5A1A94B63DEABC71C8E1D /* StatsView.swift in Sources */,
+				FB4DB5EC6A3F63B0CB835851 /* StrataSheetViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25F1B4A9EF87955D8F5BF659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E6EFE5782CF057D357CB65 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 9A381935A8B934DB3B623A1C /* PBXContainerItemProxy */;
+		};
+		81A4AC5CA12100E84C0059BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98276C4CCD0930D253EEB744 /* Auxesis */;
+			targetProxy = A2A55987AE30B0F75140D4A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C23C4B04A89ECB77F8B4EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Support/Auxesis.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/Auxesis-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Auxesis;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app does not use the camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring;
+				PRODUCT_NAME = Auxesis;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		435C4C1658232BEA49D8AD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxesis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auxesis";
+			};
+			name = Debug;
+		};
+		455D6D03A3467453B452C5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = OneSignalNotificationServiceExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DDC3DE1FA1E3B408224ABBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxesis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auxesis";
+			};
+			name = Release;
+		};
+		8C41080BC0125C5B30169A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = OneSignalNotificationServiceExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEF468461F7C4A6B31882B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		E2141A4DFE4DA4CA46BF9EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		FBC31148856A5E55C6DA048A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Support/Auxesis.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Support/Auxesis-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Auxesis;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app does not use the camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring;
+				PRODUCT_NAME = Auxesis;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42944E5DA61097F6CD074F47 /* Build configuration list for PBXProject "Auxesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF468461F7C4A6B31882B82 /* Debug */,
+				E2141A4DFE4DA4CA46BF9EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6AD83FD32684346362AAFA1A /* Build configuration list for PBXNativeTarget "AuxesisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435C4C1658232BEA49D8AD05 /* Debug */,
+				6DDC3DE1FA1E3B408224ABBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E264A63ADED064482AE3604B /* Build configuration list for PBXNativeTarget "Auxesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C23C4B04A89ECB77F8B4EEA /* Debug */,
+				FBC31148856A5E55C6DA048A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F963E40CD30ED9415A6E2C24 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C41080BC0125C5B30169A26 /* Debug */,
+				455D6D03A3467453B452C5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		89DCC5EC939920A96CE6B77B /* XCLocalSwiftPackageReference "Packages/AuxRingKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AuxRingKit;
+		};
+		A6B0F83283325CA0799CB47C /* XCLocalSwiftPackageReference "Packages/AuxCanvasCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AuxCanvasCore;
+		};
+		C273636582C3BD45C5FC965C /* XCLocalSwiftPackageReference "Packages/AuxCanvasStore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AuxCanvasStore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42695E008F5B40B6CB41C05B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+			};
+		};
+		4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1132AC139835C724877E5A44 /* AuxCanvasCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuxCanvasCore;
+		};
+		3026EB7E95A7701AE47BB996 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		34BB5984ADCB0C5F9C82B81F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42695E008F5B40B6CB41C05B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		578E7E679C4DA51E372082FB /* AuxRingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuxRingKit;
+		};
+		84765A9061A34D0385E5B3C7 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		ABE2FE911046FC167B4EE4C2 /* AuxCanvasCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuxCanvasCore;
+		};
+		B2320A82EB1A55E6BE803C67 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		CA3BB7A09D538F4874BB58CE /* AuxCanvasStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuxCanvasStore;
+		};
+		FAD181C2C77E0BB5C9A771AF /* AuxCanvasStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuxCanvasStore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C0587A4C132442E09CA51EA6 /* Project object */;
+}

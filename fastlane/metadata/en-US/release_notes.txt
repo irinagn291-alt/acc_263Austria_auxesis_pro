@@ -1,0 +1,9 @@
+Version 1.0 is the first release.
+
+A ring is one breath round. Seven rings seal the day.
+Hold the circle to set a pace, then swipe a span from one to ten minutes.
+The guided cycle is Inhale, Hold, and Exhale.
+Rings only grow. A shorter span is refused.
+Practices lists sealed and partial days.
+Stats shows Sealed days, Filed rings, Longest span, and Consecutive days.
+Settings holds Contact Auxesis, How rings ascend, Replay onboarding, Reset all data, and Haptics.
