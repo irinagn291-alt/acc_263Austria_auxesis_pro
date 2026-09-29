@@ -1,17 +1,23 @@
-The only usage-description string in the build settings is for the camera and reads: This app does not use the camera. That prompt never appears, because the app does not request camera access and does not use the camera. On a cold launch the system may show a notification permission prompt. There is no microphone, photos, or location prompt.
+Thank you for reviewing Auxesis. We retested this same build on a clean device. A crash, a dead end, an empty screen, or a non-functioning feature did not appear.
 
-There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+Three behaviours are deliberate. A brief pass can take each one for a fault.
 
-Auxesis is a daily breath canvas. It is for someone who wants each breath round to last at least as long as the last. A ring is one breath round. Seven rings seal the day.
+1. The circle will not start from a light flick. A longer swipe with no hold shows Long press first. The swipe waits. Hold the circle until the caption includes Swipe up to set the span. Then swipe until Release to begin. Tap Start round to use the Outer floor without a custom hold.
 
-No credentials or demo account are needed. Cold launch shows Breathe longer each round, with the line Hold the circle, then swipe a span so today's rings can grow. Tap Continue. Home is titled Auxesis and shows A ring is one breath round. Seven rings seal the day. Rings today and Outer floor sit above the circle. The caption reads Start round files the next ring. Long press sets your own pace. Tap Start round, or long press the circle until a pace appears, then swipe up to set the span. Release to begin. The captions then read Inhale, Hold, and Exhale. End round stops a cycle that is already underway. Rings today and Outer floor open Ascending rings, titled Rings only grow, which explains that each swipe must last as long as the ring outside it. Tap Practices to see sealed and partial days. Tap a day to read each Ring and the Day total, then Days to go back. Tap Stats to see Sealed days, Filed rings, Longest span, Consecutive days, This month, and Rings this month. Tap Settings for Contact Auxesis, How rings ascend, Replay onboarding, Reset all data, and Haptics labeled Off, Soft, Even, and Firm. Reset all data asks Reset all data? with Cancel and Reset. How rings ascend opens the same Ascending rings page.
+2. After a longer ring is filed, a shorter swipe is refused. The banner reads Each ring must last at least, followed by the Outer floor in minutes. Ascending rings opens with Rings only grow. Each swipe must last as long as the ring outside it. Swipe that long or longer, or tap Start round.
 
-Rings stay on this device. Contact Auxesis in Settings opens the support page.
+3. When Rings today reaches 7 of 7, the button reads Day sealed and stays disabled. The caption is Today is sealed. Seven rings hold the day. That is the day's close, not a freeze. Practices, Stats, and Settings still open.
 
-Behavior does not change by region. Dates and numbers follow the device locale.
+Full review path. No account, no login:
+- Cold launch may show a notification prompt. Either choice continues. First page: Breathe longer each round. with Hold the circle, then swipe a span so today's rings can grow. Tap Continue.
+- Home is titled Auxesis. Line: A ring is one breath round. Seven rings seal the day. Tiles: Rings today and Outer floor. Caption: Start round files the next ring. Long press sets your own pace.
+- Tap Start round, or hold the circle and swipe up. Captions read Inhale., Hold., then Exhale. End round stops a cycle already underway. Rings today or Outer floor opens Ascending rings.
+- Practices lists Sealed and Partial days. Open a day for each Ring and the Day total. Days returns to the list.
+- Stats shows Sealed days, Filed rings, Longest span, Consecutive days, This month, and Rings this month.
+- Settings lists Contact Auxesis, How rings ascend, Replay onboarding, Reset all data, and Haptics as Off, Soft, Even, and Firm. Reset all data asks Reset all data? with Cancel and Reset. How rings ascend opens Ascending rings. Replay onboarding returns to Breathe longer each round.
 
-No licence or regulated-industry paperwork applies. This is a personal breath log, not a medical device.
+A first open plants one thin ring on today, so Rings today reads 1 of 7 and unused slots read Open. A Partial day remains on the canvas; Start round files the next ring. After Reset all data, Settings reads The store is empty. Today holds one thin ring again.
 
-The app is a personal log only and gives no recommendations.
+Technical facts: no accounts, no in-app purchases, no ads. There is no login, no shared posts, no account-deletion path, and no App Tracking Transparency prompt. The only usage-description string is for the camera and reads This app does not use the camera. That alert never appears; the camera is not requested and is not used. A notification prompt may appear at launch. Microphone, photos, and location are not requested. Rings stay on this device. Contact Auxesis opens the support page. Behaviour does not change by region. Dates and numbers follow the device locale. Portrait only, iPhone and iPad, iOS 17 and later. This is a personal breath log, not a medical device, and it does not scan barcodes or QR codes.
 
-The app does not scan barcodes or QR codes.
+Please name the device, screen, and step that failed, and quote the wording on that screen. We will fix it and resubmit the same day.
