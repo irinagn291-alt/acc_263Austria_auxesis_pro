@@ -578,7 +578,7 @@
 				CODE_SIGN_ENTITLEMENTS = Support/Auxesis.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Auxesis-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Auxesis;
@@ -595,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring;
 				PRODUCT_NAME = Auxesis;
 				SDKROOT = iphoneos;
@@ -632,7 +632,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
@@ -642,7 +642,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				SDKROOT = iphoneos;
@@ -679,7 +679,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
@@ -689,7 +689,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				SDKROOT = iphoneos;
@@ -828,7 +828,7 @@
 				CODE_SIGN_ENTITLEMENTS = Support/Auxesis.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Auxesis-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Auxesis;
@@ -845,7 +845,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.auxesis.ring;
 				PRODUCT_NAME = Auxesis;
 				SDKROOT = iphoneos;
@@ -915,10 +915,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		42695E008F5B40B6CB41C05B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			repositoryURL = "https://github.com/ymvmj7dsyy-stack/Alamofire";
 			requirement = {
 				kind = revision;
-				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+				revision = 3ea8e93ec37a3ae5f255afb529ef20f438dd1903;
 			};
 		};
 		4C0ABF963786F8AA63C3CD45 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
