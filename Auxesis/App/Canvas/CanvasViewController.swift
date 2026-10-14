@@ -587,6 +587,14 @@ final class CanvasViewController: UIViewController {
 
     private func render() {
         let count = canvas.ringCount
+        let left = max(0, FullMarkSeal.ringCapacity - count)
+        if canvas.isSealed {
+            job.text = "The day is sealed. Seven rings hold."
+        } else if left == 1 {
+            job.text = "\(AuxFormat.integer(left)) ring left before the day seals."
+        } else {
+            job.text = "\(AuxFormat.integer(left)) rings left before the day seals."
+        }
         countTile.apply(key: "Rings today", value: AuxFormat.ringsOutOfSeven(count))
         let floor = canvas.outermostDuration?.seconds ?? RoundDuration.minimumSeconds
         floorTile.apply(key: "Outer floor", value: AuxFormat.minutes(floor))

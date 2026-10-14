@@ -1,12 +1,21 @@
 {
-  "originHash" : "87d1db37f5b276b4ad0c77023b84a902d3e8726cdae20d99a7d60bb42be95a1f",
+  "originHash" : "9e3a81c8c4301e6d701ee86c367e2f01dff3dbf893e1f0cb871ccd98265745f0",
   "pins" : [
     {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wrandecima-bit/Alamofire",
+      "location" : "https://github.com/ymvmj7dsyy-stack/Alamofire",
       "state" : {
-        "revision" : "7fdd403089757be2ce6991b287c7bef612c8bd04"
+        "revision" : "3ea8e93ec37a3ae5f255afb529ef20f438dd1903"
+      }
+    },
+    {
+      "identity" : "onesignal-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OneSignal/OneSignal-XCFramework",
+      "state" : {
+        "revision" : "b380496932e5f1bf1c772c1a7b2ba1458906734f",
+        "version" : "5.8.0"
       }
     }
   ],
